@@ -84,13 +84,20 @@ It is worth noting that the output of information on the screen is not a priorit
 
 ![display0](design/display0.jpg)
 
-## credit
+## Credit
 
 https://github.com/ldijkman/WT32-ETH01-LAN-8720-RJ45-
+
 https://github.com/kosma/minmea
+
 https://github.com/UT2UH/PPS-ntp-server
+
 https://github.com/ha5dzs/PPS-ntp-server
+
 https://github.com/DennisSc/PPS-ntp-server
+
 https://wiki.iarduino.ru/page/NMEA-0183/
+
 https://www.youtube.com/watch?v=AADmsRuzRRA
+
 https://github.com/Bodmer/TFT_eSPI
