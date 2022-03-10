@@ -649,10 +649,23 @@ void drive_display()
   }
 }
 
+//String IP;
+int countNotIP = 0;
 void chackIP()
 {
   #ifdef OPERATE_AS_ETH
   ip = ETH.localIP().toString();
+  //There is a bug. disconnected once a day 
+  if(ip == "0.0.0.0")
+  {
+    countNotIP++;
+    if(countNotIP >= 5)
+    {
+      //Serial.print("init eth");
+      countNotIP = 0;
+      ETH.begin(ETH_ADDR, ETH_POWER_PIN, ETH_MDC_PIN, ETH_MDIO_PIN, ETH_TYPE, ETH_CLK_MODE); // Enable ETH    
+    }
+  }
   #endif
   #ifdef OPERATE_AS_AP 
   ip =  WiFi.softAPIP().toString();
