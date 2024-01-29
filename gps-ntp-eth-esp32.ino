@@ -137,7 +137,7 @@ void setup() {
     #ifdef OPERATE_AS_AP
     // Stand-alone access point.
     WiFi.disconnect(true); // This re-initialises the wifi.
-    WiFi.softAP(ssid, ssid, CHANNEL, HIDE_SSID, MAX_CONNECTION);
+    WiFi.softAP(ssid, CHANNEL, HIDE_SSID, MAX_CONNECTION);
     #endif
 
     #ifdef OPERATE_AS_STA
